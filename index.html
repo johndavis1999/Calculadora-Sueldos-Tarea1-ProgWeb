@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora salario</title>
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <head class="head">
+        <h1>CALCULO DE SUELDOS</h1>
+        <H2>SUELDOS POR HORA</H2>
+    </head>
+    <div class="container" oninput="calcularSalario()">
+        <form id="ingresoDatos" >
+            <label>Ingrese el nombre: <input id="nmbre" type="text" placeholder="Nombre del empleado" required></label><br>
+            <label>Ingrese el cargo: <input id="cargo" type="text" placeholder="Cargo del empleado" required></label><br>
+            <label>Ingrese las horas trabajadas: <input id="horas" type="number" placeholder="Horas trabajadas" required></label> <br>
+            <label>Ingrese el sueldo por hora: <input id="tarifa" type="number" placeholder="Tarifa hora" required></label> <br>
+            <button class="display.calcular"> Calcular </button><br>
+            <label>Salario a neto a recibir es: <input id="result" type="text" placeholder="Salario" disabled></label> <br>
+            <p id="nota"> </p> 
+            <button onclick="resetearForm()"> Limpiar </button>
+        </form>
+    </div>
+    
+    <footer class="footer">
+        <p>2022</p>
+        <p>Template creado por <a href="https://github.com/johndavis1999">John Davis</a></p>
+    </footer>
+
+</body>
+</html>
